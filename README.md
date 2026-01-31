@@ -6,11 +6,18 @@
 [![PHP Version](https://img.shields.io/packagist/php-v/tigusigalpa/marketstack-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/marketstack-php)
 [![License](https://img.shields.io/packagist/l/tigusigalpa/marketstack-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/marketstack-php)
 
-**Marketstack PHP SDK** is a modern, production-ready Laravel package for accessing real-time stock market data, historical prices, intraday trading data, and financial market information through the [Marketstack REST API](https://marketstack.com/). Built specifically for PHP 8.1+ and Laravel 10/11, this SDK provides developers with a clean, fluent interface for integrating stock market data into their applications.
+**Marketstack PHP SDK** is a modern, production-ready Laravel package for accessing real-time stock market data,
+historical prices, intraday trading data, and financial market information through
+the [Marketstack REST API](https://docs.apilayer.com/marketstack/docs/api-documentation). Built specifically for PHP
+8.1+ and Laravel 10/11, this SDK provides developers with a clean, fluent interface for integrating stock market data
+into their applications.
 
 ## 📊 What is Marketstack?
 
-[Marketstack](https://marketstack.com/) is a powerful REST API providing real-time, intraday, and historical stock market data for over 125,000+ stock tickers from 72+ global exchanges including NYSE, NASDAQ, LSE, and more. This PHP SDK makes it easy to integrate Marketstack's comprehensive financial data into your Laravel applications, trading platforms, portfolio trackers, and financial analytics tools.
+[Marketstack](https://marketstack.com/) is a powerful REST API providing real-time, intraday, and historical stock
+market data for over 125,000+ stock tickers from 72+ global exchanges including NYSE, NASDAQ, LSE, and more. This PHP
+SDK makes it easy to integrate Marketstack's comprehensive financial data into your Laravel applications, trading
+platforms, portfolio trackers, and financial analytics tools.
 
 ## 🎯 Use Cases
 
@@ -30,6 +37,7 @@ This Marketstack PHP library is perfect for building:
 ## ✨ Key Features
 
 ### Core Features
+
 - 🚀 **Fluent Interface**: Elegant, chainable methods for clean, expressive code
 - 📦 **Native Laravel Integration**: Service provider, facade, and configuration out of the box
 - 🎯 **Type-Safe DTOs**: Strongly typed data transfer objects for IDE autocomplete
@@ -38,6 +46,7 @@ This Marketstack PHP library is perfect for building:
 - 🔧 **PSR-12 Compliant**: Follows modern PHP coding standards and best practices
 
 ### Market Data Access
+
 - 📈 **End-of-Day (EOD) Data**: Historical daily stock prices with OHLCV data
 - ⚡ **Real-time Intraday Data**: Live stock prices with 1-minute to 1-hour intervals
 - 🏢 **Stock Tickers**: Search and retrieve information for 125,000+ stock symbols
@@ -46,6 +55,7 @@ This Marketstack PHP library is perfect for building:
 - 🕐 **Timezone Support**: Accurate timezone handling for global trading hours
 
 ### Developer Experience
+
 - 🔌 **Multiple Response Formats**: Get data as Collections, DTOs, JSON, or raw HTTP responses
 - 🛡️ **Error Handling**: Custom exceptions with detailed error messages
 - 🔍 **Debug Mode**: Build and inspect API URLs for troubleshooting
@@ -469,21 +479,22 @@ echo "Currency: {$currency->name} ({$currency->symbol})\n";
 
 ## 📊 Comparison with Other Solutions
 
-| Feature | Marketstack PHP | Alpha Vantage | Yahoo Finance | IEX Cloud |
-|---------|----------------|---------------|---------------|-----------|
-| **Laravel Integration** | ✅ Native | ❌ Manual | ❌ Manual | ❌ Manual |
-| **Fluent Interface** | ✅ Yes | ❌ No | ❌ No | ❌ No |
-| **Type-Safe DTOs** | ✅ Yes | ❌ No | ❌ No | ❌ No |
-| **Global Exchanges** | ✅ 72+ | ⚠️ Limited | ⚠️ Limited | ⚠️ US Only |
-| **Intraday Data** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Historical EOD** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Free Tier** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Test Coverage** | ✅ 100% | ❌ N/A | ❌ N/A | ❌ N/A |
-| **PSR-12 Compliant** | ✅ Yes | ❌ N/A | ❌ N/A | ❌ N/A |
+| Feature                 | Marketstack PHP | Alpha Vantage | Yahoo Finance | IEX Cloud  |
+|-------------------------|-----------------|---------------|---------------|------------|
+| **Laravel Integration** | ✅ Native        | ❌ Manual      | ❌ Manual      | ❌ Manual   |
+| **Fluent Interface**    | ✅ Yes           | ❌ No          | ❌ No          | ❌ No       |
+| **Type-Safe DTOs**      | ✅ Yes           | ❌ No          | ❌ No          | ❌ No       |
+| **Global Exchanges**    | ✅ 72+           | ⚠️ Limited    | ⚠️ Limited    | ⚠️ US Only |
+| **Intraday Data**       | ✅ Yes           | ✅ Yes         | ✅ Yes         | ✅ Yes      |
+| **Historical EOD**      | ✅ Yes           | ✅ Yes         | ✅ Yes         | ✅ Yes      |
+| **Free Tier**           | ✅ Yes           | ✅ Yes         | ✅ Yes         | ✅ Yes      |
+| **Test Coverage**       | ✅ 100%          | ❌ N/A         | ❌ N/A         | ❌ N/A      |
+| **PSR-12 Compliant**    | ✅ Yes           | ❌ N/A         | ❌ N/A         | ❌ N/A      |
 
 ## 🎓 Why Choose Marketstack PHP?
 
 ### For Laravel Developers
+
 - **Zero Configuration**: Works out of the box with Laravel's service container
 - **Facade Support**: Use `Marketstack::` anywhere in your application
 - **Environment Variables**: Secure API key management through `.env`
@@ -491,6 +502,7 @@ echo "Currency: {$currency->name} ({$currency->symbol})\n";
 - **Testable**: Easy to mock in unit tests with `Http::fake()`
 
 ### For PHP Developers
+
 - **Modern PHP**: Built for PHP 8.1+ with strict types and modern syntax
 - **Standalone Usage**: Can be used without Laravel framework
 - **Composer Ready**: Simple installation via Composer
@@ -498,6 +510,7 @@ echo "Currency: {$currency->name} ({$currency->symbol})\n";
 - **PSR Standards**: Follows PSR-4 autoloading and PSR-12 coding style
 
 ### For Financial Applications
+
 - **Reliable Data**: Powered by Marketstack's enterprise-grade API
 - **Global Coverage**: 125,000+ tickers from 72+ exchanges worldwide
 - **Real-time Updates**: Intraday data with minute-level granularity
@@ -592,7 +605,8 @@ return [
 
 ### Is this package free to use?
 
-Yes, the package itself is completely free and open-source under the MIT license. However, you'll need a Marketstack API key. Marketstack offers a free tier with 1,000 API requests per month.
+Yes, the package itself is completely free and open-source under the MIT license. However, you'll need a Marketstack API
+key. Marketstack offers a free tier with 1,000 API requests per month.
 
 ### What's the difference between free and paid Marketstack plans?
 
@@ -626,6 +640,7 @@ try {
 ### Which stock exchanges are supported?
 
 Marketstack supports 72+ global exchanges including:
+
 - **US**: NYSE, NASDAQ, AMEX
 - **Europe**: LSE, Euronext, Deutsche Börse
 - **Asia**: TSE, HKEX, SSE, NSE
@@ -680,6 +695,7 @@ $results = Marketstack::tickers()
 ### What data formats are available?
 
 The package supports multiple formats:
+
 - **Collection**: `collect()` - Laravel Collection of DTOs
 - **DTO**: `dto()` - Single data transfer object
 - **JSON**: `json()` - Raw array data
@@ -695,18 +711,17 @@ The package supports multiple formats:
 
 ## 🏷️ Keywords
 
-Stock market API, PHP stock data, Laravel stock prices, real-time stock quotes, historical stock data, intraday trading data, stock market SDK, financial data API, stock ticker search, NASDAQ API, NYSE data, stock portfolio tracker, trading platform PHP, market data Laravel, stock price API, EOD data, OHLCV data, stock exchange API, financial analytics, algorithmic trading PHP
-
-## Credits
-
-- [Igor Sazonov](https://github.com/tigusigalpa)
-- Inspired by [wsbinette/marketstack-api](https://github.com/wsbinette/marketstack-api)
+Stock market API, PHP stock data, Laravel stock prices, real-time stock quotes, historical stock data, intraday trading
+data, stock market SDK, financial data API, stock ticker search, NASDAQ API, NYSE data, stock portfolio tracker, trading
+platform PHP, market data Laravel, stock price API, EOD data, OHLCV data, stock exchange API, financial analytics,
+algorithmic trading PHP
 
 ## 📄 License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-This package is open-source software licensed under the MIT license. You are free to use, modify, and distribute this software in your projects, both commercial and non-commercial.
+This package is open-source software licensed under the MIT license. You are free to use, modify, and distribute this
+software in your projects, both commercial and non-commercial.
 
 ## 💬 Support & Community
 
@@ -728,14 +743,16 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ### Security Vulnerabilities
 
-If you discover a security vulnerability, please send an email to [sovletig@gmail.com](mailto:sovletig@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please send an email to [sovletig@gmail.com](mailto:sovletig@gmail.com). All
+security vulnerabilities will be promptly addressed.
 
 ## 📚 API Documentation & Resources
 
 ### Official Marketstack Documentation
 
 - **[API Documentation](https://docs.apilayer.com/marketstack/docs/api-documentation)** - Complete API reference
-- **[Quick Start Guide](https://docs.apilayer.com/marketstack/docs/quickstart-guide)** - Getting started with Marketstack
+- **[Quick Start Guide](https://docs.apilayer.com/marketstack/docs/quickstart-guide)** - Getting started with
+  Marketstack
 - **[Marketstack Website](https://marketstack.com/)** - Sign up for API access
 - **[Pricing Plans](https://marketstack.com/product)** - Compare free and paid tiers
 - **[API Status](https://status.marketstack.com/)** - Check API uptime and incidents
@@ -751,30 +768,29 @@ If you discover a security vulnerability, please send an email to [sovletig@gmai
 
 This package implements all major Marketstack API endpoints:
 
-| Endpoint | Description | Documentation |
-|----------|-------------|---------------|
-| `/eod` | End-of-day stock prices | Historical daily OHLCV data |
-| `/eod/latest` | Latest EOD data | Most recent closing prices |
-| `/eod/{date}` | Specific date EOD | Historical data for exact date |
-| `/intraday` | Intraday stock prices | Real-time tick data |
-| `/intraday/latest` | Latest intraday | Current market prices |
-| `/tickers` | Stock ticker search | Search and filter tickers |
-| `/tickers/{symbol}` | Specific ticker info | Detailed ticker information |
-| `/exchanges` | Stock exchange list | Global exchange directory |
-| `/exchanges/{mic}` | Exchange details | Specific exchange info |
-| `/currencies` | Currency information | Supported currencies |
-| `/timezones` | Timezone data | Exchange timezones |
+| Endpoint            | Description             | Documentation                  |
+|---------------------|-------------------------|--------------------------------|
+| `/eod`              | End-of-day stock prices | Historical daily OHLCV data    |
+| `/eod/latest`       | Latest EOD data         | Most recent closing prices     |
+| `/eod/{date}`       | Specific date EOD       | Historical data for exact date |
+| `/intraday`         | Intraday stock prices   | Real-time tick data            |
+| `/intraday/latest`  | Latest intraday         | Current market prices          |
+| `/tickers`          | Stock ticker search     | Search and filter tickers      |
+| `/tickers/{symbol}` | Specific ticker info    | Detailed ticker information    |
+| `/exchanges`        | Stock exchange list     | Global exchange directory      |
+| `/exchanges/{mic}`  | Exchange details        | Specific exchange info         |
+| `/currencies`       | Currency information    | Supported currencies           |
+| `/timezones`        | Timezone data           | Exchange timezones             |
 
 ## 🌟 Star History
 
-If you find this package useful, please consider giving it a ⭐ on [GitHub](https://github.com/tigusigalpa/marketstack-php)!
+If you find this package useful, please consider giving it a ⭐
+on [GitHub](https://github.com/tigusigalpa/marketstack-php)!
 
 ## 🔖 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed version history and updates.
 
 ---
-
-**Built with ❤️ by [Igor Sazonov](https://github.com/tigusigalpa)**
 
 *Marketstack PHP SDK - Making stock market data accessible for PHP developers*
