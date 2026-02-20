@@ -1,5 +1,7 @@
 # Marketstack PHP - API Client for Laravel
 
+![Marketstack PHP SDK](https://github.com/user-attachments/assets/1b1d4c17-550f-4fd9-8c97-024cb63f204c)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tigusigalpa/marketstack-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/marketstack-php)
 [![PHP Version](https://img.shields.io/packagist/php-v/tigusigalpa/marketstack-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/marketstack-php)
 [![License](https://img.shields.io/packagist/l/tigusigalpa/marketstack-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/marketstack-php)
